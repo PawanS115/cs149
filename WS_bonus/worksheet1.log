@@ -1,0 +1,16 @@
+   71  cd user
+   72  nano slee.c
+   73  nano sleep.c
+   74  cd ..
+   75  make clean
+   76  make qemu
+   77  cd user
+   78  nano sleep.c
+   79  nano user.h
+   80  cd ..
+   81  make clean
+   82  make qemi
+   83  make qemu
+   84  ls -l grade-lab-util
+   85  ./grade-lab-util sleep
+   86  make GRADEFLAGS=sleep grade
